@@ -1,0 +1,35 @@
+{
+  "name": "inventory-order-api",
+  "version": "1.0.0",
+  "description": "Inventory and order management REST API with stock reservation, order workflow and an auditable stock ledger",
+  "main": "dist/src/server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "author": "Ryan Mendes",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.22.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^24.19.2",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
